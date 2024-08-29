@@ -1,0 +1,16 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo_mod {
+    margin-top: 4px;
+    max-width: 80%;
+  }
+
+  body{
+    background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url("/assets/img/back/backdep.png");
+  }
