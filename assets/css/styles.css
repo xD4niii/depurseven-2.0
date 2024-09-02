@@ -14,3 +14,31 @@
      background-repeat: no-repeat;
      background-image: url("/assets/img/back/backdep.png");
   }
+
+  .img_home{
+    margin: 24px 2px;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .faq_container{
+    min-width: 100vh;
+    margin: 14px auto;
+    align-items: center;
+}    
+
+.footer{
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: static;
+  max-height: none;
+  box-sizing: border-box;
+}
