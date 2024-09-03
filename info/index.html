@@ -10,48 +10,49 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
   </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky w-100">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logo_mod" src="/assets/img/depurfont-removebg-preview.png" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse position-sticky end-100" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Faq</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../contacts/index.html">Contatti</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../buy/index.html">Pricing</a>
-          </li>
-         <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul> -->
-          </li>
-       <!--   <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
+  <div class="page">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo_mod" src="/assets/img/depurfont-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse position-sticky end-100" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="info/index.html">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts/index.html">Contatti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="buy/index.html">Pricing</a>
+            </li>
+           <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul> -->
+            </li>
+         <!--   <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
       
     <!--<div class="faq_container container-fluid d-grid">
         <div class="dropdown mb-3">
@@ -107,23 +108,80 @@
     </div>
   --> 
 
-    <div class="">
+    <div class="container-fluid">
+      <div class="form_faq_container">
+        <h1>Hai una domanda da farci che non è presente qui?</h1>
+        <h3>Scrivicela tu direttamente dal <a href="/faq_form/index.html">form</a> dedicato!</h3>
+       <!-- <form id="contact-form-faq" action="https://formspree.io/f/xyzgoyav" method="POST">
+          <input id="first_name" type="text" name="first" placeholder="Nome" autocomplete="off" required/>
+          <input id="last_name" type="text" name="last" placeholder="Cognome" autocomplete="off" required/>
+          <input id="mail" type="email" name="email" placeholder="Email" autocomplete="off" required/>
+          <textarea id="message" rows="5" cols="60" name="message" placeholder="Scrivici!" autocomplete="off" required></textarea>
+          <button type="submit" id="myButton">Invia</button>
+        </form>-->
+      </div>
+
+      <div class="faq_item">
+        <input type="checkbox" id="faq1">
+        <label class="faq_question" for="faq1">Come posso contattarvi?
+        </label>
+        <div class="faq_answer">
+            <p>Puoi scriverci tramite form o chiamarci al numero che trovi in fondo alla pagina!</p>
+        </div>
+    </div>
+    
+    <div class="faq_item">
+        <input type="checkbox" id="faq2">
+        <label class="faq_question" for="faq2">Quanto tempo ci vuole per avere una vostra risposta?</label>
+        <div class="faq_answer">
+            <p>Vorremmo soddisfare tutte le vostre richieste, dal momento che ci contatti prenderemo immediatamente in carico la sua richiesta, 
+              e verrà contattato dal nostro team entro e non oltre una settimana lavorativa.</p>
+        </div>
+    </div>
+    
+    <div class="faq_item">
+        <input type="checkbox" id="faq3">
+        <label class="faq_question" for="faq3">Se non vengo contattato entro una settimana lavorativa a chi posso rivolgermi?</label>
+        <div class="faq_answer">
+            <p>Con un numero di richieste alto è possibile che i tempi di attesa non siano concordi a quelli stabiliti, 
+              per qualsiasi problema non esitare a scriverci <a href="../warn_form/index.html">qui!</a>.</p>
+        </div>
+      </div>
+        <div class="faq_item">
+          <input type="checkbox" id="faq4">
+          <label class="faq_question" for="faq4">Dove posso richiedere un preventivo?</label>
+          <div class="faq_answer">
+              <p>Per la richiesta di un preventivo può chiamarci direttamente sul nostro numero verde, 
+                e specificare a inizio chiamata di voler richiedere un preventivo.
+              </p>
+          </div>
+      </div>
+      
+      <div class="faq_item">
+        <input type="checkbox" id="faq5">
+        <label class="faq_question" for="faq5">Se riscontro dei malfunzionamenti al mio impianto prima della data di manutenzione stabilita, 
+          cosa posso fare?</label>
+        <div class="faq_answer">
+            <p>Per problemi di questo genere non esitare a contattarci sul nostro numero verde, prenoteremo per te l'uscita di un nostro tecnico,
+              anche in giornata se possibile.</p>
+          </div>
+        </div>
+      </div>
 
     </div>
 
-      <footer class="footer mt-auto py-3 bg-white w-100">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 m-0 d-flex justify-content-around">
-              <a href="" target="_blank"><img src="/assets/img/icone social/instagram/instagram-48.svg" alt="Instagram"></a>
-              <a href="" target="_blank"><img src="/assets/img/icone social/s2i/start2impact.png" width="48px" height="48px" alt=""></a>
-              <a href="" target="_blank"><img src="/assets/img/icone social/linkedin/linkedin-48.svg" alt="Linkedin"></a>
-              <a href="" target="_blank"><img src="/assets/img/icone social/github/github-48.svg" alt="Github"></a>
-            </div>
+    <footer class="footer mt-auto py-3 bg-white w-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 m-0 d-flex justify-content-around m-2">
+            <a href="" target="_blank"><img src="/assets/img/icone_social/instagram/instagram-48.svg" alt="Instagram"></a>
+            <a href="" target="_blank"><img src="/assets/img/icone_social/facebook/facebook-48.svg" width="48px" height="48px" alt="Facebook"></a>
+            <a href="" target="_blank"><img src="/assets/img/icone_social/linkedin/linkedin-48.svg" alt="Linkedin"></a>
           </div>
-        <p class="d-flex justify-content-center">Questo sito è solo una prova, nulla qui presente è associato a una azienda vera.</p>
-        <p class="d-flex justify-content-center">&copy; 2024 Depur Seven | All Rights Reserved</p>
+        </div>
       </div>
+      <p class="d-flex justify-content-center">Questo sito è solo una prova, nulla qui presente è associato a una azienda vera.</p>
+      <p class="d-flex justify-content-center">&copy; 2024 Depur Seven | All Rights Reserved</p>
     </footer>
 
 </body>
