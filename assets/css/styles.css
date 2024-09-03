@@ -81,6 +81,145 @@
 
 }
 
+#contact-form-faq-faq{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+#contact-form-faq input {
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 14px;
+  padding: 16px 16px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+#contact-form-faq input:focus-within {
+  outline: none;
+  border-color: black;
+  border-width: 3px;
+}
+#contact-form-faq #first_name {
+  background-color: #9ce0ff;
+}
+#contact-form-faq #last_name {
+  background-color: #9ce0ff;
+}
+#contact-form-faq #mail {
+  background-color: #9ce0ff;
+}
+#contact-form-faq #message {
+  border-color: black;
+  border-width: 2px;
+}
+#contact-form-faq textarea {
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 14px;
+  padding: 16px 16px;
+  margin-bottom: 25px;
+  border-color: black;
+  background-color: #9ce0ff;
+}
+#contact-form-faq textarea:focus-within {
+  outline: none;
+  border-color: black;
+  border-width: 3px;
+}
+#contact-form-faq button {
+  border-color: black;
+  border-radius: 20px;
+  background-color: #9ce0ff;
+  font-size: 16px;
+  margin-bottom: 80px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin-left: 47%;
+}
+#contact-form-faq button:hover {
+  opacity: 80%;
+  cursor: pointer;
+  background-color: #0a68ff;
+  border-color: white;
+  color: white;
+}
+
+#contact-form-faq-faq{
+  display: grid;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+#warn-form-faq input {
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 14px;
+  padding: 16px 16px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+#warn-form-faq input:focus-within {
+  outline: none;
+  border-color: black;
+  border-width: 3px;
+}
+#warn-form-faq #first_name {
+  background-color: #9ce0ff;
+}
+#warn-form-faq #last_name {
+  background-color: #9ce0ff;
+}
+#warn-form-faq #mail {
+  background-color: #9ce0ff;
+}
+#warn-form-faq #number {
+  background-color: #9ce0ff;
+}
+#warn-form-faq #message {
+  border-color: black;
+  border-width: 2px;
+}
+#warn-form-faq textarea {
+  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 14px;
+  padding: 16px 16px;
+  margin-bottom: 25px;
+  border-color: black;
+  background-color: #9ce0ff;
+}
+#warn-form-faq textarea:focus-within {
+  outline: none;
+  border-color: black;
+  border-width: 3px;
+}
+#warn-form-faq button {
+  border-color: black;
+  border-radius: 20px;
+  background-color: #9ce0ff;
+  font-size: 16px;
+  margin-bottom: 80px;
+  padding: 10px 18px;
+  text-align: center;
+  display: flex;
+  margin-left: 47%;
+}
+#warn-form-faq button:hover {
+  opacity: 80%;
+  cursor: pointer;
+  background-color: #0a68ff;
+  border-color: white;
+  color: white;
+}
+
 .footer{
   width: 100%;
   padding: 20px;
