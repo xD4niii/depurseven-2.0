@@ -28,6 +28,15 @@
   
   }
 
+  .text_style{
+    margin: 20 0px;
+    padding: 10 0px;
+    font-size: large;
+    max-width: 60%;
+    border-bottom: 2px solid #0a68ff;
+}
+
+
  /* .faq_container{
     min-width: 100vh;
     margin: 14px auto;
@@ -218,6 +227,45 @@
   background-color: #0a68ff;
   border-color: white;
   color: white;
+}
+
+.container_btn {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: start;
+}
+
+.txt, .number {
+  display: inline-block;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.number {
+  opacity: 0
+}
+
+.copy-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: #00c91b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  margin: 4px;
+}
+
+.copy-btn:hover .txt {
+  opacity: 0;
+}
+
+.copy-btn:hover .number {
+  opacity: 1;
 }
 
 .footer{
