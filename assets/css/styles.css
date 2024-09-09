@@ -17,6 +17,34 @@
     background-image: url("/assets/img/back/backdep.png");
   }
    
+  .nav_active{
+   /* text-decoration: underline 4px #0a68ff;*/
+    font-weight: 800;
+    color: #0a68ff;
+  }
+
+  .intro {
+    background-color: #f4f4f4;
+    border-left: #0a68ff;
+    border-radius: 8px;
+    padding: 18px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .intro h4 {
+    font-size: 24px;
+    color: #027ed1;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+
   .btn-group:active{
     color: inherit;
   }
@@ -34,7 +62,7 @@
     text-decoration: none;
     color: inherit;
   }
-  
+
   .page{
     display: flex;
     flex-direction: column;
@@ -58,9 +86,13 @@
   .card {
     position: relative;
     overflow: hidden;
+    height: 274px;
   }
   
   .card-img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
     transition: transform 0.5s ease;
   }
 
