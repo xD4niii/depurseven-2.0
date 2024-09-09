@@ -10,12 +10,12 @@
     position: relative;
     z-index: 10;
   }
-
-  body{
+  
+  /*body{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("/assets/img/back/backdep.png");
-  }
+  }*/
    
   .nav_active{
    /* text-decoration: underline 4px #0a68ff;*/
@@ -67,7 +67,11 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/back/backdep.png");
 }
 
   .img_home{
@@ -115,6 +119,10 @@
     transform: scale(1.1);
   }
   
+  .intro_osmosi{
+    background-image: none;
+  }
+
   /*@media (max-width: 576px) {
     .overlay-text {
       font-size: 14px; /* Adatta la dimensione del testo su schermi piccoli 
@@ -125,16 +133,6 @@
  /* .card:hover{
     padding: 1.2rem;
   }*/
-
-.text_style{
-  margin: 20 0px;
-  padding:10 0px;
-  max-width: 80%;
-  text-align: center;
-  font-size: x-large;
-  border-left: 2px solid #0a68ff;
-  /*border-right: 2px solid #0a68ff;*/
-}
 
 .faq_container {
   padding: 30px;
@@ -409,20 +407,43 @@
 .mission{
   text-align: start;
   justify-content: start;
-  border-left: 2px solid #0a68ff;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  max-width: 70%;
+  text-align: center;
+  font-size: x-large;
+  /*border-left: 2px solid #0a68ff;*/
+  /*border-right: 2px solid #0a68ff;*/
 }
 
-.footer{
+.text_style{
+  margin: 20 0px;
+  padding:10 0px;
+  max-width: 80%;
+  text-align: center;
+  font-size: 40px;
+  /*border-left: 2px solid #0a68ff;*/
+  /*border-right: 2px solid #0a68ff;*/
+} 
+
+  footer{
   width: 100%;
   padding: 20px;
-  background-color: white;
+  margin-top: auto;
+  height: auto;
+  max-height: auto;
   color: black;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: static;
-  max-height: none;
+  position: relative;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .page {
+    background-image: url("/assets/img/back/backdep2.png");
+  }
 }
