@@ -16,7 +16,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse position-sticky end-100" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse position-sticky" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -52,48 +52,59 @@
         </div>
       </div>
     </nav>
-    
-  <div class="contact_box">
-    <div class="row">
-      <div class="col-12 col-md-6 contact_info">
-        <img src="../assets/img/Icon_contact/icons8-place-50.png" alt="">
-        <h3>Sede</h3>
-        <p>Urbino(PU) 61029</p>
-      </div>  
 
-      <div class="col-12 col-md-6 contact_info">
-        <img src="../assets/img/Icon_contact/download.png" alt="">
-        <h3>Orari</h3>
-        <p>Dal Lunedì al Venerdì: <br/>
-            8:30-13:00 / 15:00-18:00</p>
-      </div>
-    </div>
+
+    <div class="container contact_box">
       <div class="row">
-      <div class="col-12 col-md-6 contact_info">
-        <img src="../assets/img/Icon_contact/icons8-mail-50.png" alt="">
-        <h3>E-Mail</h3>
-        <p>@example</p>
-      </div>
+        <div class="col-12 col-md-6">
+          <div class="row">
+            <div class="col-12 col-md-6 contact_info">
+              <img src="../assets/img/Icon_contact/icons8-place-50.png" alt="">
+              <h3>Sede</h3>
+              <p>Urbino(PU) 61029</p>
+            </div>
 
-      <div class="col-12 col-md-6 contact_info">
-        <img src="../assets/img/Icon_contact/icons8-call-50.png" alt="">
-        <h3>Telefono</h3>
-        <p>3394525648</p>
+            <div class="col-12 col-md-6 contact_info">
+              <img src="../assets/img/Icon_contact/download.png" alt="">
+              <h3>Orari</h3>
+              <p>Dal Lunedì al Venerdì: <br/>
+                  8:30-13:00 / 15:00-18:00</p>
+            </div>
+
+            <div class="col-12 col-md-6 contact_info">
+              <img src="../assets/img/Icon_contact/icons8-mail-50.png" alt="">
+              <h3>E-Mail</h3>
+              <p>@example</p>
+            </div>
+
+            <div class="col-12 col-md-6 contact_info">
+              <img src="../assets/img/Icon_contact/icons8-call-50.png" alt="">
+              <h3>Telefono</h3>
+              <p>3394525648</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6">
+          <div class="form_faq_container">
+            <h3>Vuoi chiederci qualcosa?</h3>
+            <form id="contact-form-faq" action="" method="POST">
+              <h6 class="faq_person">Nome</h6>
+              <input id="first_name" type="text" name="first" placeholder="Nome" autocomplete="off" required/>
+              <h6>Cognome</h6>
+              <input id="last_name" type="text" name="last" placeholder="Cognome" autocomplete="off" required/>
+              <h6>Mail</h6>
+              <input id="mail" type="email" name="email" placeholder="Email" autocomplete="off" required/>
+             <!-- <h6>Telefono</h6>
+              <input id="phone" type="number" name="phone" placeholder="Telefono" autocomplete="off" required/>-->
+              <h6>Il tuo messaggio</h6>
+              <textarea id="message" rows="5" cols="60" name="message" placeholder="Scrivici!" autocomplete="off" required></textarea>
+              <button type="submit" id="myButton">Invia</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="form_faq_container">
-      <h1>Vuoi chiederci qualcosa?</h1>
-     <form id="contact-form-faq" action="https://formspree.io/f/xyzgoyav" method="POST">
-        <input id="first_name" type="text" name="first" placeholder="Nome" autocomplete="off" required/>
-        <input id="last_name" type="text" name="last" placeholder="Cognome" autocomplete="off" required/>
-        <input id="mail" type="email" name="email" placeholder="Email" autocomplete="off" required/>
-        <textarea id="message" rows="5" cols="60" name="message" placeholder="Scrivici!" autocomplete="off" required></textarea>
-        <button type="submit" id="myButton">Invia</button>
-      </form>
-    </div>
-  </div>
-
-
 
 
   </div>

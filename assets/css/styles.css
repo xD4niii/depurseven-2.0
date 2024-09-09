@@ -7,18 +7,39 @@
 .logo_mod {
     margin-top: 4px;
     max-width: 80%;
+    position: relative;
+    z-index: 10;
   }
 
   body{
     background-size: cover;
-     background-repeat: no-repeat;
-     background-image: url("/assets/img/back/backdep.png");
+    background-repeat: no-repeat;
+    background-image: url("/assets/img/back/backdep.png");
   }
    
+  .btn-group:active{
+    color: inherit;
+  }
+
+  .btn-group:visited{
+    color: inherit;
+  }
+
+  .btn-group:focus{
+    outline: none;
+    color: inherit;
+  }
+
+  .btn-group a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
   .page{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
 }
 
   .img_home{
@@ -30,16 +51,57 @@
 
   .card_home{
     justify-content: space-around;
+    max-width: 75%;
+    overflow-x: auto;
   }
 
-  .text_style{
-    margin: 20 0px;
-    padding:10 0px;
-    max-width: 80%;
-    text-align: center;
-    font-size: x-large;
-    border-left: 2px solid #0a68ff;
-    /*border-right: 2px solid #0a68ff;*/
+  .card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img {
+    transition: transform 0.5s ease;
+  }
+
+  .card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    transition: padding 0.3s ease;
+  }
+  
+  .overlay-text {
+    font-size: 18px;
+  }
+  
+  .card-hover:hover .card-img{
+    transform: scale(1.1);
+  }
+  
+  /*@media (max-width: 576px) {
+    .overlay-text {
+      font-size: 14px; /* Adatta la dimensione del testo su schermi piccoli 
+    }
+  } */
+  
+
+ /* .card:hover{
+    padding: 1.2rem;
+  }*/
+
+.text_style{
+  margin: 20 0px;
+  padding:10 0px;
+  max-width: 80%;
+  text-align: center;
+  font-size: x-large;
+  border-left: 2px solid #0a68ff;
+  /*border-right: 2px solid #0a68ff;*/
 }
 
 .faq_container {
@@ -87,35 +149,39 @@
   border: 1px solid #ddd;
   border-radius: 14px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease; /* Transizioni per max-height, opacity e padding */
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
 }
 
-.form_faq_container{
-  text-align: center;
-  margin: 40px 40px;
+/*.faq_person{
+  text-justify: newspaper;
+}*/
 
+.form_faq_container{
+  text-align: left;
+  padding: 20px;
 }
 
 #contact-form-faq-faq{
   display: grid;
   width: 100%;
   justify-content: center;
- 
+
 }
 
 #contact-form-faq input {
-  width: 40%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 80%;
+ /* margin-left: 25%;
+  margin-right: 25%;*/
   font-size: 14px;
   padding: 16px 16px;
   border-color: black;
   margin-bottom: 20px;
+  justify-content: left;
 }
 #contact-form-faq input:focus-within {
   outline: none;
   border-color: black;
-  border-width: 3px;
+  border-width: 2px;
 }
 #contact-form-faq #first_name {
   background-color: #9ce0ff;
@@ -126,19 +192,24 @@
 #contact-form-faq #mail {
   background-color: #9ce0ff;
 }
+#contact-form-faq #phone {
+  background-color: #9ce0ff;
+}
 #contact-form-faq #message {
   border-color: black;
   border-width: 2px;
 }
 #contact-form-faq textarea {
-  width: 40%;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 80%;
+  height: auto;
+  /*margin-left: 25%;
+  margin-right: 25%;*/
   font-size: 14px;
-  padding: 16px 16px;
+  padding: 18px 16px;
   margin-bottom: 25px;
   border-color: black;
   background-color: #9ce0ff;
+  justify-content: left;
 }
 #contact-form-faq textarea:focus-within {
   outline: none;
@@ -159,9 +230,9 @@
 #contact-form-faq button:hover {
   opacity: 80%;
   cursor: pointer;
-  background-color: #0a68ff;
+  background-color: hsl(182, 100%, 50%);
   border-color: white;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #contact-form-faq-faq{
@@ -238,17 +309,21 @@
 .contact_box{
   padding: 30px;
   margin-top: 40px;
-  max-width: 1000px;
+  max-width: auto;
   background-color: white;
-  margin: 0 auto;
+  margin: 40px auto;
   border: 1px solid black;
   border-radius: 10px;
 }
 
+/*.contact_box {
+  display: block;
+}*/
+
 .contact_info{
   margin-bottom: 20px;
   padding: 20px;
-
+  display: block;
 }
 
 .contact_info img{
@@ -256,9 +331,9 @@
   margin-bottom: 10px;
 }
 
-.contact_info h3{
+/*.contact_info h3{
   margin-bottom: 10px;
-}
+}*/
 
 .container_btn {
   display: flex;
